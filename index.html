@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoria 2026 - URE CAIEIRAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0066cc 0%, #00aaff 100%);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 0.5rem;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .school-link {
+            position: relative;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://i.ibb.co/dscRg9Ms/LOGO-URE-CAIEIRAS-2-1.png" alt="Logo SEDUC" class="h-12">
+                <span class="text-xl font-bold">Projeto Professor Tutor Anos Finais - 2026</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="https://youtu.be/KH2I4HrcZO0" class="hover:text-yellow-300 transition"><span class="text-red-600">Tutorial</span></a>
+                <a href="#objetivos" class="hover:text-yellow-300 transition">Objetivos</a>
+                <a href="#metodologia" class="hover:text-yellow-300 transition">Metodologia</a>
+                <a href="#escolas" class="hover:text-yellow-300 transition">Escolas</a>
+                <a href="#contato">Links úteis</a>
+                <a href="#">DASH DE PROGRESSO TUTORIA 2026</a>
+                <a href="#">AVALIAÇÃO DE ENTRADA</a>
+                 <a href="#">AVALIAÇÃO FINAL</a>
+                    </div>
+                       </nav>
+            <button class="md:hidden text-2xl" id="menuBtn">☰</button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-blue-900 w-full py-2" id="mobileMenu">
+            <div class="container mx-auto px-4 flex flex-col space-y-3">
+                <a href="#" class="hover:text-yellow-300 transition"><span class="text-red-600">Tutorial</span></a>
+                <a href="#objetivos" class="hover:text-yellow-300 transition">Objetivos</a>
+                <a href="#metodologia" class="hover:text-yellow-300 transition">Metodologia</a>
+                <a href="#escolas" class="hover:text-yellow-300 transition">Escolas</a>
+                <a href="#contato">Links úteis</a>
+                <a href="#">DASH DE PROGRESSO TUTORIA 2026</a>
+                 <a href="#">AVALIAÇÃO DE ENTRADA</a>
+                 <a href="#">AVALIAÇÃO FINAL</a>
+                    </div>
+          </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="gradient-bg text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Projeto Professor Tutor Anos Finais - URE CAIEIRAS </h1>
+                <p class="text-xl mb-8">Programa de recomposição de aprendizagens em Língua Portuguesa e Matemática para estudantes dos 6º,7º, 8º e 9º  anos do Ensino Fundamental.</p>
+                <div class="flex space-x-4">
+                    <a href="#sobre" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-full transition shadow-lg pulse">Saiba Mais</a>
+                    <a href="#contato" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-3 px-6 rounded-full transition shadow-lg">Links úteis</a>
+                    <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-full transition shadow-lg pulse">Tutorial DASH Avaliação final</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://i.ibb.co/dscRg9Ms/LOGO-URE-CAIEIRAS-2-1.png" alt="Banner Tutoria 2025" class="max-w-xs md:max-w-md floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Sobre o Programa</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <p class="text-lg mb-6 text-gray-700">O Projeto Tutoria Anos Finais 2026 da Secretaria da Educação do Estado de São Paulo (SEDUC-SP) tem como objetivo principal apoiar a recomposição das aprendizagens dos estudantes do 6º,7º, 8º e 9º anos do Ensino Fundamental, com foco nos componentes curriculares de Língua Portuguesa e Matemática.</p>
+                    <p class="text-lg text-gray-700">Em 2026, o projeto será implementado em 2862 escolas de 91 Diretorias de Ensino, priorizando escolas com resultados abaixo da média no SARESP.</p>
+                </div>
+                <div class="md:w-1/2 bg-blue-50 rounded-xl p-6 shadow-lg">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-book text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg text-blue-900">Material Didático</h2>
+                            <p class="text-gray-700">Material Horizonte para <b>6º, 7º, 8º e 9º anos</b>, alinhados ao Currículo Paulista.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg text-blue-900">Turmas</h2>
+                            <p class="text-gray-700">Turmas multisseriadas com no minimo 10 e até 15 estudantes, <b>com aulas presenciais</b> 3 a 4 vezes por semana.</p>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-book text-blue-600 text-xl"></i>
+                            </div>
+                        <div>
+                            <h2 class="font-bold text-lg text-blue-900">Blocos de aulas </h2>
+                            <p class="text-gray-700">Turmas com <b>13 aulas de Língua Portuguesa</b>, <b>13 aulas Matemática</b> e <b>26 aulas de Língua Portuguesa & Matemática</b>.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-chalkboard-teacher text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg text-blue-900">Tutores</h2>
+                            <p class="text-gray-700">De um a dois tutores por escola com <b>(Formação em pedagogia)</b> ou <b>(Português e Matemática)</b> com formação específica e experiência em alfabetização.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objetivos" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Objetivos do Projeto</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-bullseye text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-blue-900">Recuperação de Aprendizagens</h3>
+                    <p class="text-gray-700 text-center">Recuperar defasagens em leitura, escrita e operações matemáticas, atendendo estudantes com baixo desempenho identificados pelo SARESP e sondagens internas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-user-graduate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-blue-900">Preparação para o Ensino Médio</h3>
+                    <p class="text-gray-700 text-center">Consolidar competências e habilidades essenciais para a transição ao Ensino Médio, com foco em interpretação textual e operações matemáticas complexes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chart-line text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-blue-900">Melhoria de Indicadores</h3>
+                    <p class="text-gray-700 text-center">Elevar os índices educacionais das escolas participantes, reduzindo as desigualdades de aprendizagem e melhorando os resultados nas avaliações externas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="metodologia" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Metodologia e Atuação</h2>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-blue-50 rounded-xl p-6 mb-6 shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900 border-b-2 border-blue-200 pb-2">👩‍🏫 Perfil do Professor Tutor</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Formação prioritária em Pedagogia ou Curso Normal Superior</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Experiência em alfabetização e letramento matemático</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Jornada de 13 ou 26 horas semanais com o material Horizonte </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 rounded-xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900 border-b-2 border-yellow-200 pb-2">📝 Seleção dos Estudantes</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-600 mt-1 mr-2"></i>
+                                <span>Feita em conjunto pelos professores regentes e tutores em conjunto com a base de estudantes elegiveis.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-600 mt-1 mr-2"></i>
+                                <span>Baseada no desempenho no SARESP e em provas de sondagem diagnóstica</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-600 mt-1 mr-2"></i>
+                                <span>Foco em estudantes com maiores dificuldades de aprendizagem</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                                
+                <div class="lg:w-1/2">
+                    <div class="bg-green-50 rounded-xl p-6 h-full shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900 border-b-2 border-green-200 pb-2">📚 Atuação do Tutor</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-users-cog text-blue-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-blue-900">Estrutura</h4>
+                                                                  </div>
+                                <p class="text-sm text-gray-700">Cada escola contara com um ou dois tutores: um para Língua Portuguesa outro para Matemática ou um tutor para ambas.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-calendar-alt text-yellow-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-blue-900">Frequência</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">Aulas presenciais, 3 a 4 vezes por semana, no mesmo turno das aulas regulares.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-green-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-book-open text-green-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-blue-900">Material</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">Uso de material didático impresso fornecido pela SEDUC, dividido em dois volumes material horizonte.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-chalkboard text-purple-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-blue-900">Metodologia</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">Atividades progressivas que estimulam raciocínio lógico, leitura crítica e resolução de problemas.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-purple-100 p-2 rounded-full mr-0">
+                                        <i class="fas fa-chalkboard text-pink-600"></i>
+                                    </div>
+                            <h4 class="font-bold text-blue-900">Etapas SED</h4>
+                        </div>
+                        <p class="text-sm text-gray-700">ENTREVISTA/CONTRATAÇÃO</p>
+                        <p class="text-sm text-gray-700">SONDAGEM/REGISTRO DE ENTRADA</p>
+                        <p class="text-sm text-gray-700">CADASTRO/ENTURMAÇÃO</p>
+                        <p class="text-sm text-gray-700">AULAS E TAREFAS</p>
+                        <p class="text-sm text-gray-700">REGISTRO DE PERCURSO</p>
+                        <p class="text-sm text-gray-700">REGISTRO DE SAIDA</p>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools Section -->
+    <section id="escolas" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Escolas Participantes</h2>
+            
+            <!-- Announcements Section -->
+            <div class="bg-yellow-50 rounded-xl shadow-lg p-6 mb-8">
+                <div class="flex items-center">
+                    <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-calendar-alt text-yellow-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Avisos Importantes</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-start">
+                                <i class="fas fa-bell text-yellow-500 mt-1 mr-2"></i>
+                                <p class="text-gray-700">Live “Professor Tutor – Anos Finais” . - breve</p> <a href="#" class="hover:text-yellow-300 transition"><span class="text-red-600">LIVE</span></a> 
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-bell text-yellow-500 mt-1 mr-2"></i>
+                                <p class="text-gray-700">Formação EFAPE - breve : 00/00/2026 a 00/00/2026</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-bell text-yellow-500 mt-1 mr-2"></i>
+                                <p class="text-gray-700">Período de aplicação da Avaliação Diagnóstica de Entrada: de 00/00 a 00/00/2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ADAIL JARBAS DUCLOS</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ALBERTO GRAF CAPITAO</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ALFRIED THEODOR WEISZFLOG</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ARMANDO SESTINI</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ARTHUR WEINGRILL</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>AZEVEDO SOARES</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>BAIRRO DO ITAIM</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>BAIRRO JUNDIAIZINHO</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>BELEM DA SERRA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>BENEDITO APARECIDO TAVARES PROF</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>BUENO DE AZEVEDO FILHO PROF</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>CARLOS AUGUSTO DE PADUA FLEURY PROF</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>CELESTINA VALENTE LENGENFELDER PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>DOMINGOS CAMBIAGHI PROF</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>DR NELSON MANZANARES</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ELVIRA PARADA MANGA PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>FRANCISCO GONCALVES VIEIRA PROF</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>HERMELINA DE ALBUQUERQUE PASSARELLA PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>IRACI SARTORI VIEIRA DA SILVA PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ISAURA DE MIRANDA BOTTO PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ISAURA VALENTINI HANSER PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>IVONE DOS ANJOS DA SILVA CAMPOS PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JARDIM SAO FRANCISCO</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JOSE CARLOS DA SILVA JUNIOR</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JOSE PARADA PROFESSOR</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JOSE ROBERTO MELCHIOR DR</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>LENITA CORREA CAMARGO PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>LUIZ ALEXANDRE DOS SANTOS VEREADOR</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>LYDIA SCALET WALKER PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>MARIA ZEZA GOMES DE OLIVEIRA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>NAIR HANNICKEL ROMARO</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>NIDE ZAIM CARDOSO PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>OZILDE ALBUQUERQUE PASSARELLA DR</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>PAULO DUARTE</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>PEDRO GALRAO DO NASCIMENTO</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>PEDRO LELIS DE SOUZA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>PREFEITO</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>PIETRO PETRI</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>RITUCO MITANI PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ULYSSES SANCHES RAMIRES PROF</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>VINCENZO LOBASSI</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>AFONSO MORENO APARECIDO</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ROBERTO TONELLOTTI PROFESSOR</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>CHACARA CAMPONESA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JARDIM VASSOURAS</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>DR MARIO TOLEDO DE MORAES</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JARDIM ALEGRIA II</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JARDIM DAS ROSAS</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JARDIM SILVIA II</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JOCIMARA VIEIRA DA SILVA PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>JOSE DE BARROS MARTINS EDITOR</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>KATIA MARIA TARIFA LEME TONELLI PROFA</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>PARQUE CENTO E VINTE II</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>PEDRO PAULO DE AGUIAR</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ROGERIO LEVORIN PROF</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                          
+                          <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>ZILTON BICUDO PROF</span>
+                          </div>
+                          <div class="dropdown-content">
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português-Horizonte</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática-Horizonte</a>
+                          </div>
+                    </div>
+                    
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Links úteis</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <div class="bg-blue-50 rounded-xl p-6 shadow-lg h-full">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900">Documentos orientadores</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Acesso SED</h4>
+                                    <a href="https://tutoria.educacao.sp.gov.br/" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">SED-Tutoria</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Acesso URE-CAIEIRAS</h4>
+                                    <a href="https://decaieiras.educacao.sp.gov.br/" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">URE-CAIEIRAS</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Acesso sala do futuro</h4>
+                                    <a href="https://saladofuturo.educacao.sp.gov.br/escolha-de-perfil" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Sala do Futuro</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Acesso Resolução</h4>
+                                    <a href="https://sedsee.blob.core.windows.net/ficha/Anexo/legislacao25062024151806resol%2046%202024.pdf?Time=14%3A46" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Resolução</a>
+                                </div>
+                            </div>
+                                <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Documento Orientador</h4>
+                                    <a href="https://docs.google.com/document/d/1xxF_zL-X5jjRyWXWw9vk0EIU0QzCAL7e/edit?usp=sharing&ouid=101532812359216929017&rtpof=true&sd=true" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Documento</a>
+                                </div>
+                                    </div>
+                                <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                    <div>
+                                    <h4 class="font-bold text-red-900">Aplicação Avaliação Diagnóstica Final</h4>
+                                    <a href="https://drive.google.com/file/d/1Z4N35wwsCwRoMSdmtg2UnvWk5e7C08T7/view?usp=drive_link" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">PASSO A PASSO</a>
+                                </div>
+                                    </div>
+                             
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Apostilas Horizonte LP</h4>
+                                    <a href="https://drive.google.com/drive/folders/1JB71kbjiB22ivjcfIkCRUwre_xPtKrNA?usp=drive_link" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Horizonte LP</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Apostilas Horizonte MT</h4>
+                                    <a href="https://drive.google.com/drive/folders/1PlkMWnegR9-tzOYOLTvEhnMc--7e3TQT?usp=drive_link" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Horizonte MT</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">FAQ Geral</h4>
+                                    <a href="https://sites.google.com/servidor.educacao.sp.gov.br/portal-professortutor/in%C3%ADcio" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">FAQ</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Sugestão de Portifolio</h4>
+                                    <a href="https://www.canva.com/design/DAGwz4LfT4M/RsMeTwlJApxjgtn7Erixew/edit?utm_content=DAGwz4LfT4M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Portifolio-Coruja </a>
+                                     <a href="https://www.canva.com/design/DAGwz0xqDdI/4N6Y6uCmQYhEMDocDCE3UQ/edit?utm_content=DAGwz0xqDdI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Portifolio-Horizonte </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                          
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 flex items-center">
+                    <img src="https://i.ibb.co/9m53T9V3/LOGO-DE.png" alt="Logo SEDUC" class="h-10 mr-3">
+                    <span class="text-lg font-bold">Projeto Professor Tutor Anos Finais</span>
+                </div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                <a href="https://drive.google.com/file/d/1YFF0kQcbuQACjdE-QNsC17ApsM2UUCqd/view">Resolução SEDUC Nº 140 de 18 de novembro de 2025 </a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">© 2026 URE CAIEIRAS/EEC </p>
+                    <p class="text-xs mt-1">Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+                
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+                
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                                            
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // School dropdown functionality
+        document.querySelectorAll('.school-link').forEach(school => {
+            const link = school.querySelector('div');
+            const dropdown = school.querySelector('.dropdown-content');
+            
+            link.addEventListener('click', (e) => {
+                // Close all other dropdowns
+                document.querySelectorAll('.dropdown-content').forEach(d => {
+                    if (d !== dropdown) d.style.display = 'none';
+                });
+                
+                // Toggle current dropdown
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                } else {
+                    dropdown.style.display = 'block';
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.school-link')) {
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
